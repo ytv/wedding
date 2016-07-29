@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Mark & Patricia</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="app/photos/photos.css">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img class="img-responsive logo" src="assets/img/logo_03.png"/>
+                </a>
+                <button type="button" class="navbar-toggle"
+                data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <!-- Details links -->
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown" class="dropdown-toggle">The Wedding<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="details">Details</a></li>
+                                <li><a class="disabled" ui-sref="party">Meet the Party</a></li>
+                            </ul>
+                        </li>
+                        <!-- Travel Links -->
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown" class="dropdown-toggle">Travel Info<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="disabled" ui-sref="accommodations">Accommodations</a></li>
+                                <li><a class="disabled" ui-sref="transportation">Transportation</a></li>
+                                <li><a ui-sref="goodtoknows">Good to knows</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a class="disabled" href="#registry">Registry</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <hr class=topHr>
+        <div ui-view></div>
+        <hr class=bottomHr>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.1.0/jquery.countdown.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app.router.js"></script>
+    <script src="app/app.run.js"></script>
+    <script src="app/home/counter.js"></script>
+    <script src="app/photos/photos.controller.js"></script>
+</body>
+</html>

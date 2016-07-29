@@ -1,0 +1,318 @@
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+body {
+    background: rgba(255,240,244,0.25);
+}
+
+img {
+    width: 100%;
+}
+
+/*-----NAVBAR-----*/
+
+.navbar {
+    height: 60px;
+    background-color: #fefefe;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.navbar-nav {
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    background-color: #fff;
+    float: none;
+}
+
+.nav .active a {
+    background: none !important;
+}
+
+.navbar-toggle {
+    height: 37px;
+    top: 5px;
+}
+
+.dropdown-menu {
+    color: #888;
+    font-size: 16px;
+    width: 190px;
+}
+
+.dropdown-menu li {
+    width: 98%;
+}
+
+/*-----hr-----*/
+
+hr {
+    border-top: 1px solid #C4B828;
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.topHr {
+    top: 80px;
+}
+
+.bottomHr {
+    margin-bottom: 20px;
+}
+
+/*-----SECTION-----*/
+
+section {
+    margin: 100px auto 20px auto;
+}
+
+.card {
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #999;
+    padding: 5%;
+    margin: auto 15%;
+    font: 19px/28px 'Times New Roman';
+    color: #777;
+}
+
+/*-----HEADINGS and Font Formatting-----*/
+
+h1 {
+    color: #777;
+    text-align: center;
+    font: 50px 'Great Vibes';
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+h3 {
+    font: 35px 'Great Vibes';
+}
+
+/*-----HOME-----*/
+
+.cover-img {
+    box-shadow: 0 0 20px #A1A1A1;
+    border-radius: 0;
+    top: 5px;
+    width: 90%;
+    margin: 0 5% 20px 5%;
+}
+
+.counter {
+    font: 35px 'Great Vibes';
+    margin: 3% auto;
+}
+
+.counter span {
+    background-color: #999;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1%;
+}
+
+.hashtags {
+    font: 30px 'Papyrus';
+    margin-bottom: 20px;
+}
+
+/*-----ITINERARY-----*/
+
+.itinerary {
+    margin-top: -20px;
+}
+
+.itinerary-date {
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.schedule h4 {
+    font: 29px 'Great Vibes';
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.schedule {
+    margin-bottom: 50px;
+}
+
+.details-hr {
+    border-top: 1px solid #999;
+    bottom: 20px;
+    margin-right: 0;
+    width: 68%;
+}
+
+.schedule li {
+    list-style-type: none;
+}
+
+/*-----STORY-----*/
+
+.story-top {
+    padding-bottom: 20px;
+}
+
+.story-mid {
+    float: left;
+    max-width: 300px;
+    padding: 5px 20px 10px 0;
+}
+
+.story-bottom {
+    float: right;
+    max-width: 300px;
+    padding: 5px 0 0 20px;
+}
+
+/*-----GoodToKnows-----*/
+
+.goodtoknow-section {
+    margin-bottom: 50px;
+}
+
+.goodtoknows h3 {
+}
+
+/*---------------MEDIA--------------*/
+
+@media screen and (max-width: 460px) {
+    h1 {
+        font-size: 10vw;
+    }
+    .counter {
+        font-size: 7vw;
+    }
+    .hashtags {
+        font-size: 7vw;
+    }
+    hr {
+        width: 90%;
+    }
+    .card {
+        margin: auto 5%;
+    }
+}
+
+@media screen and (min-width: 442px) and (max-width: 767px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .card {
+        margin: auto 5%;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar-brand {
+        display: inline-block;
+        width: 200px;
+        position: relative;
+        top: -5px;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        right: 1px;
+        top: 60px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-collapse.in {
+        overflow: hidden;
+        max-height: none !important;
+        height: auto !important;
+    }
+
+    .navbar-nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        display: block;
+    }
+
+    .itinerary {
+        margin-top: 0;
+    }
+
+    .details-hr {
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav li {
+        top: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .details-hr {
+        width: 58%;
+    }
+
+    .card {
+        margin: auto 10%;
+        padding: 7%;
+    }
+
+    hr {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav li {
+        margin: 0 1%;
+    }
+
+    hr {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1200px;
+    }
+
+    .navbar-nav li {
+        margin: 0 3%;
+    }
+}

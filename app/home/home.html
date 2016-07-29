@@ -1,0 +1,30 @@
+<section>
+    <img class="cover-img" src="assets\img\Save-the-date.jpg" alt="save-the-date"/>
+    <div class="row text-center">
+        <div class="col-xs-12">
+            <p class="counter"></p>
+        </div>
+        <div class="hashtags">
+            <div class="col-xs-12">
+                    #SYDxLA
+            </div>
+            <div class="col-xs-12">
+                    #SYDwedsLA
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TODO: Move jQuery script -->
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.counter').countdown("01/17/2017 14:30:00", function(event) {
+            var $this = $(this).html(event.strftime(''
+                + '<span>%m</span> months '
+                + '<span>%d</span> days '
+                + '<span>%H</span> hours '
+                + '<span>%M</span> mins'));
+        });
+    });
+</script>

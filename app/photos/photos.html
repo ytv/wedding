@@ -1,0 +1,122 @@
+<section id="photos">
+    <div class="card photos">
+        <div class="container-fluid">
+            <div class="col-xs-4">
+                <a ng-repeat="photo in photos1" ng-href="#photos" data-target="#theCarousel" data-slide-to="{{ $index }}"><img ng-src="{{ photo.filename }}"
+                    class="img-responsive tn" data-toggle="modal" data-target="#modal"/></a>
+            </div>
+            <div class="col-xs-4">
+                <a ng-repeat="photo in photos2" ng-href="#photos" data-target="#theCarousel" data-slide-to="{{ $index + 9}}"><img ng-src="{{ photo.filename }}"
+                    class="img-responsive tn" data-toggle="modal" data-target="#modal"/></a>
+            </div>
+            <div class="col-xs-4">
+                <a ng-repeat="photo in photos3" ng-href="#photos" data-target="#theCarousel" data-slide-to="{{ $index + 18}}"><img ng-src="{{ photo.filename }}"
+                    class="img-responsive tn" data-toggle="modal" data-target="#modal"/></a>
+            </div>
+        </div>
+
+        <div id="modal" class="modal fade" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        <div id="theCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide slide001"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide002"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide003"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide004"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide005"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide006"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide007"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide008"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide009"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide010"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide011"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide012"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide013"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide014"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide015"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide016"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide017"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide018"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide019"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide020"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide021"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide022"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide023"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide024"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide025"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide026"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide slide027"></div>
+                                </div>
+                            </div>
+
+                            <a class="btn left carousel-control" target="_self" data-target="#theCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="btn right carousel-control" target="_self" data-target="#theCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
